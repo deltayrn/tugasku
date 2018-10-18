@@ -1,0 +1,42 @@
+body{
+  margin:0px;
+  font-family:arial;
+}
+button{
+    display:block;
+    margin:auto;
+}
+button, 
+ul.hidden li, ul.show li{
+  padding:10px 30px;
+  cursor:pointer;
+}
+.hidden, .show{
+    margin:0;
+    padding:0;
+    list-style:none;
+    background:#EF4836;
+    color:white;
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:200px;
+    -ms-transition: margin-left ease 0.2s; 
+    -webkit-transition: margin-left ease 0.2s; 
+    -moz-transition: margin-left ease 0.2s;
+}
+ul.hidden li:hover, ul.show li:hover, .judul{
+  background:#D91E18;
+}
+.hidden {
+  margin-left:-220px;
+}
+.show{
+  margin-top:0;
+}
+#floating_alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 5000;
+}
